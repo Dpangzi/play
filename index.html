@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="utilt.js"></script>
+</head>
+<body>
+<pre>
+    var guid = Tool.guid();
+</pre>
+<code id="guid">
+
+</code>
+
+<hr>
+<pre>
+    var array1 = [1,2,3,4,5，"666","888",{name:"123"}];
+    Tool.each(array1,function(idx,item,arr)
+    {
+        var element = document.getElementById("each");
+        element.innerHTML+=+idx.toString()+" "+item;
+    });
+
+    var array2 = {name:"123",age:"45",getName:function(){
+        return "";
+    }}
+    Tool.each(array2,function(idx,item,arr)
+    {
+        var element = document.getElementById("each");
+        element.innerHTML+=+idx.toString()+" "+item;
+    });
+
+</pre>
+<code id="each">
+
+</code>
+<hr>
+<pre>
+    var array1=[1,2,3,4,5];
+    var array2=[1,2,3,4,5];
+    var result = Tool.equal(array1,array2);
+
+    var array1=["1",3,4,5];
+    var array2=[1,3,4,5];
+    var result = Tool.equal(array1,array2);
+
+    var array1=["1",{name:"1243",reg:new RegExp(/aa/)},3,4,{}];
+    var array2=[1,{name:"1243",reg:new RegExp(/aa/)},3,4,5];
+    var result = Tool.equal(array1,array2);
+
+    var obj1={"name":"123",age:"12",sex:"1"};
+    var obj2={"name":"123",sex:"1",age:"12"};
+    var result = Tool.equal(obj1,obj2);
+</pre>
+<code id="equal">
+
+</code>
+<hr>
+<pre>
+    var array=[1,2,3,"444",{name:"age"},new RegExp(/1243/g),new Date()],time = new Date();
+    result = Tool.filter(array,time);
+
+    var array=[1,2,3,"444",{name:"age"},new RegExp(/1243/g),new Date()],time = new Date();
+    filter = Tool.filter(array,{name:"age1"});
+</pre>
+<code id="filter">
+
+</code>
+</body>
+<script type="text/javascript">
+    var guid = Tool.guid();
+    var element = document.getElementById("guid");
+    element.innerHTML+="<br\/>"+guid.toString();
+
+    var array1 = [1,2,3,4,5,"666","888",{name:"123"}];
+    Tool.each(array1,function(idx,item,arr)
+    {
+        var element = document.getElementById("each");
+        element.innerHTML+="<br\/>"+idx.toString()+" "+item;
+    });
+
+    var array2 = {name:"123",age:"45",getName:function(){
+        return "";
+    }}
+    
+    Tool.each(array2,function(idx,item,arr)
+    {
+        var element = document.getElementById("each");
+        element.innerHTML+="<br\/>"+idx.toString()+" "+item;
+    });
+
+    var array1=[1,2,3,4,5];
+    var array2=[1,2,3,4,5];
+    var result = Tool.equal(array1,array2);
+    document.getElementById("equal").innerHTML+="<br\/>"+"result:"+result;
+
+    var array1=["1",3,4,5];
+    var array2=[1,3,4,5];
+    var result = Tool.equal(array1,array2);
+    document.getElementById("equal").innerHTML+="<br\/>"+"result:"+result;
+
+    var array1=["1",{name:"1243",reg:new RegExp(/aa/)},3,4,{}];
+    var array2=[1,{name:"1243",reg:new RegExp(/aa/)},3,4,5];
+    var result = Tool.equal(array1,array2);
+    document.getElementById("equal").innerHTML+="<br\/>"+"result:"+result;
+
+    var obj1={};
+    obj1.name="123";
+    obj1.age="12";
+    obj1.sex="1";
+
+    var obj2={"name":"123",sex:"1",age:"12"};
+    var result = Tool.equal(obj1,obj2);
+    document.getElementById("equal").innerHTML+="<br\/>"+"result:"+result;
+
+    var array=[1,2,3,"444",{name:"age"},new RegExp(/1243/g),new Date()],time = new Date();
+    var filter = Tool.filter(array,time);
+    document.getElementById("filter").innerHTML+="<br\/>"+"filter:"+filter;
+
+    var array=[1,2,3,"444",{name:"age"},new RegExp(/1243/g),new Date()],time = new Date();
+    filter = Tool.filter(array,{name:"age1"});
+    document.getElementById("filter").innerHTML+="<br\/>"+"filter:"+filter.length;
+
+</script>
+</html>
