@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src="utilt.js"></script>
+<script type="text/javascript" src="MClass.js"></script>
+<script type="text/javascript">
+
+    var StudentClass = ClassConstructor.createClass();
+    StudentClass.include({
+        instanceList: [],
+        findStudent: function (id) {
+            Tool.filter(instanceList, function (id) {
+                return this.id == id;
+            })
+        },
+        createInstance:function(id,name)
+        {
+
+        }
+    });
+
+    StudentClass.extend({
+
+    });
+</script>
+</html>

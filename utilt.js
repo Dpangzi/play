@@ -216,10 +216,22 @@
         return result;
     }
 
-    var groupBy = tool.groupBy = function(array,predicate)
+    var groupBy = tool.groupBy = function(array,predicate,context)
     {
         var result ={};
 
+        for(var index= 0,len=array.length;index<len;index++) {
+            var key = predicate.call(context || window, array[index]);
+            if(result[key])
+            {
+                result[key].push(array[index]);
+            }
+            else
+            {
+                result[key] =  [array[index]];
+            }
+
+        }
         return result;
     }
 })(window);

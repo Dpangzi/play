@@ -67,6 +67,23 @@
 <code id="filter">
 
 </code>
+<hr>
+<pre>
+    var array = [1,2,3,4,5,6,7,8,9,10];
+    var result = Tool.groupBy(array,function(value)
+    {
+         return value%3;
+    });
+
+    var array = [{name:"123",age:"12"},{name:"1233",age:"12"},{name:"1231",age:"12"},{name:"1223",age:"124"},{name:"1233",age:"12"}];
+    var result = Tool.groupBy(array,function(value)
+    {
+        return value.name;
+    });
+</pre>
+<code id="groupby">
+
+</code>
 </body>
 <script type="text/javascript">
     var guid = Tool.guid();
@@ -122,5 +139,18 @@
     filter = Tool.filter(array,{name:"age1"});
     document.getElementById("filter").innerHTML+="<br\/>"+"filter:"+filter.length;
 
+    var array = [1,2,3,4,5,6,7,8,9,10];
+    var result = Tool.groupBy(array,function(value)
+    {
+        return value%3;
+    });
+    document.getElementById("groupby").innerHTML+="<br\/>"+"groupby:"+JSON.stringify(result);
+
+    var array = [{name:"123",age:"12"},{name:"1233",age:"12"},{name:"1231",age:"12"},{name:"1223",age:"124"},{name:"1233",age:"12"}];
+    var result = Tool.groupBy(array,function(value)
+    {
+        return value.name;
+    });
+    document.getElementById("groupby").innerHTML+="<br\/>"+"groupby:"+JSON.stringify(result);
 </script>
 </html>
