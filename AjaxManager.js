@@ -8,11 +8,6 @@ AjaxManager = (function() {
         delete this.context.ajaxList[this.identify][this.option.url];
     }
 
-    var final = function()
-    {
-
-    }
-
     var addDelayAborted = function(option,callback)
     {
         var identify = this.predicate.call(option);

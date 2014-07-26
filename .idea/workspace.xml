@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10654ba5-1cd7-4251-85e8-02ca3da8f6bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-1.9.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClassT.html" afterPath="$PROJECT_DIR$/ClassT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MClass.js" afterPath="$PROJECT_DIR$/MClass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AjaxManager.js" afterPath="$PROJECT_DIR$/AjaxManager.js" />
     </list>
     <ignored path="MyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,8 +58,8 @@
       <file leaf-file-name="AjaxManager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AjaxManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56582636" vertical-offset="316" max-vertical-offset="2232">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.26330534" vertical-offset="4" max-vertical-offset="2112">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -115,8 +112,8 @@
         <option value="$PROJECT_DIR$/ClassT.html" />
         <option value="$PROJECT_DIR$/ajaxTest.js" />
         <option value="$PROJECT_DIR$/ajax.js" />
-        <option value="$PROJECT_DIR$/AjaxManager.js" />
         <option value="$PROJECT_DIR$/ajaxTest.html" />
+        <option value="$PROJECT_DIR$/AjaxManager.js" />
       </list>
     </option>
   </component>
@@ -670,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AjaxManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56582636" vertical-offset="316" max-vertical-offset="2232">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.26330534" vertical-offset="4" max-vertical-offset="2112">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
