@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script type="text/javascript" src="./AjaxManager.js">
+
+</script>
+<script type="text/javascript" src="./jquery-1.9.1.min.js">
+</script>
+<body>
+
+    <input value="manger" onclick="manageClick()" type="button"/>
+    <input value="nomarl" onclick="nomarlClick()" type="button"/>
+    <div style="height: 3000000px"></div>
+</body>
+<script type="text/javascript">
+    var i=0;
+    var a = AjaxManager.init({
+        aborted:true,
+        delayTime:0
+    });
+    function manageClick()
+    {
+        window.document.onscroll = function() {
+            var url = "./index.html?a="+i%5;
+            a.addAjax({url:url},function() {
+                        console.log(window.scrollY);
+                    }
+            );
+            i++;
+        }
+    }
+
+    function nomarlClick()
+    {
+        window.document.onscroll = function() {
+            console.log(window.scrollY);
+        }
+    }
+</script>
+</html>
